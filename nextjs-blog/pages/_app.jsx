@@ -1,5 +1,6 @@
 import "../styles/main.scss";
 import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/react';
 
 function App({Component, pageProps}) {
   return (
@@ -22,6 +23,7 @@ function App({Component, pageProps}) {
           </div>
           <div className="margin"></div>
         </div>
+        <Analytics/>
       </>
   )
 }
