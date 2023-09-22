@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Da Vinci';
+    src: local('TRJNDaVinci-Display');
+    src: url('../../public/fonts/TRJNDaVinci-Display.otf') format('opentype'),
+        url('../../public/fonts/TRJNDaVinci-Display.woff') format('woff');
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Da Vinci';
+    src: local('TRJN DaVinci Italic-Display');
+    src: url('../../public/fonts/TRJN DaVinci Italic-Display.otf') format('opentype'),
+        url('../../public/fonts/TRJNDaVinciItalic-Display.woff') format('woff');
+    font-style: italic;
+}

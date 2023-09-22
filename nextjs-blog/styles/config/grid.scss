@@ -1,0 +1,27 @@
+// container-body grid layout
+.main-grid {
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+    min-width: 0;
+
+    @media only screen and (min-width: $screen-medium) {
+        grid-template-columns: 40px auto 40px;
+    }
+
+    @media only screen and (min-width: $screen-large) {
+        grid-template-columns: minmax(80px, auto) minmax(auto, $grid-max-width) minmax(80px, auto);
+    }
+}
+
+.main__body {
+    max-width: calc(100vw - 48px);
+    min-width: 0;
+
+    @media only screen and (min-width: $screen-medium) {
+        max-width: calc(100vw - 80px);
+    }
+
+    @media only screen and (min-width: $screen-large) {
+        max-width: calc(100vw - 160px);
+    }
+}
