@@ -8,7 +8,7 @@ export default function Home() {
 
       <div className="text">
         <span>🚧</span>
-        <p>working on it</p>
+        <p>we're working on it</p>
         <span>🚧</span>
       </div>
     </div>
