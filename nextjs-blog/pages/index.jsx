@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
     <div className="home">
@@ -11,6 +13,12 @@ export default function Home() {
         <p>we're working on it</p>
         <span>🚧</span>
       </div>
+      <Image
+        src="/images/brunch_email_dark.png"
+        width={160}
+        height={39}
+        alt="Picture of the author"
+      />
     </div>
   );
 }
