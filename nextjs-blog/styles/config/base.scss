@@ -1,12 +1,15 @@
 html,
 body {
     height: 100%;
-    font-family: "Da Vinci", Arial, Helvetica, sans-serif;
+    font-family: "Monument Grotesk", Helvetica, sans-serif;
+    font-feature-settings: 'dlig' on, 'ss02' on;
+    background: #D7D2CB;
 }
 
 
 html {
     font-size: 62.5%;
+    font-weight: 300;
 }
 
 body {
