@@ -1,0 +1,15 @@
+.nav {
+    padding: 2.7rem 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__right {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+    }
+}
