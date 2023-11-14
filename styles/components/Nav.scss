@@ -1,0 +1,42 @@
+.nav {
+    padding: 2.7rem 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__right {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        @media only screen and (min-width: $screen-medium) {
+            flex-direction: row;
+        }
+    }
+
+    &__logo {
+        height: 2.4rem;
+
+        @media only screen and (min-width: $screen-medium) {
+            height: 3rem;
+        }
+
+        @media (prefers-color-scheme: light) {
+
+            > path {
+                fill: palette(black);
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            > path {
+                fill: palette(beige);
+            }
+        }
+    }
+}

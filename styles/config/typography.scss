@@ -1,3 +1,44 @@
+@mixin selection {
+    @media (prefers-color-scheme: light) {
+        color: palette(orange);
+    }
+
+    @media (prefers-color-scheme: light) {
+        color: palette(yellow);
+    }
+}
+
+::selection {
+
+    @include selection;
+}
+
+::-moz-selection {
+
+    @include selection;
+}
+
 p {
     font-weight: 300;
+
+    @media (prefers-color-scheme: light) {
+        color: palette(black);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: palette(beige);
+    }
+}
+
+a {
+    text-decoration: none;
+    font-weight: 300;
+
+    @media (prefers-color-scheme: light) {
+        color: palette(black);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: palette(beige);
+    }
 }

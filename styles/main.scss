@@ -1,7 +1,11 @@
+@import "./config/colours.scss";
 @import "./config/config.scss";
 @import "./config/fonts.scss";
 @import "./config/base.scss";
 @import "./config/grid.scss";
 @import "./config/typography.scss";
+@import "./config/buttons.scss";
 
 @import "./pages/home.scss";
+
+@import "./components/Nav.scss";
