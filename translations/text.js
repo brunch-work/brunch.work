@@ -33,7 +33,15 @@ const text = {
         hero_4: "des",
         hero_5: "solutions numériques",
         hero_6: "centrées sur l'utilisateur et",
-        hero_7: "l'excellence opérationnelle"
+        hero_7: "l'excellence opérationnelle",
+        hero_2_1: "We act as an",
+        hero_2_2: "extension",
+        hero_2_3: "of client",
+        hero_2_4: "teams, driving",
+        hero_2_5: "positive change",
+        hero_2_6: "through new perspectives and",
+        hero_2_7: "thoughtful,",
+        hero_2_8: "exciting work",
     }
 }
 
