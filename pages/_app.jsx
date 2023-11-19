@@ -11,7 +11,6 @@ import Nav from "../components/Nav/Nav";
 function App({Component, pageProps}) {
 
   const { locale } = useRouter();
-
   const currentLanguage = text[locale]
 
   return (

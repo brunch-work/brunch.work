@@ -5,12 +5,21 @@ const text = {
         localeAria: "Site en français",
         localeCap: "FR",
         contact: "Contact us",
-        hero_1: "Brunch is a ",
-        hero_2: "creative ",
-        hero_3: "agency solidifying brands through ",
-        hero_4: "user centric ",
-        hero_5: "digital solutions, and ",
-        hero_6: "operational excellence"
+        hero_1: "Brunch is a",
+        hero_2: "creative agency",
+        hero_3: "solidifying brands through",
+        hero_4: "user",
+        hero_5: "centric",
+        hero_6: "digital solutions, and",
+        hero_7: "operational excellence",
+        hero_2_1: "We act as an",
+        hero_2_2: "extension",
+        hero_2_3: "of client",
+        hero_2_4: "teams, driving",
+        hero_2_5: "positive change",
+        hero_2_6: "through new perspectives and",
+        hero_2_7: "thoughtful,",
+        hero_2_8: "exciting work",
     },
     fr: {
         logoAria: "Logo de studio Brunch",
@@ -18,12 +27,13 @@ const text = {
         localeAria: "English site",
         localeCap: "EN",
         contact: "Contactez-nous",
-        hero_1: "Brunch est une agence ",
-        hero_2: "créative ",
-        hero_3: "qui renforce les marques grâce à des ",
-        hero_4: "solutions numériques ",
-        hero_5: "centrées sur l'utilisateur et ",
-        hero_6: "l'excellence opérationnelle"
+        hero_1: "Brunch est une",
+        hero_2: "agence créative",
+        hero_3: "qui renforce les marques grâce à",
+        hero_4: "des",
+        hero_5: "solutions numériques",
+        hero_6: "centrées sur l'utilisateur et",
+        hero_7: "l'excellence opérationnelle"
     }
 }
 
