@@ -5,6 +5,19 @@
     justify-content: center;
     align-items: center;
 
+    &--second {
+        height: 100vh;
+
+        @media (prefers-color-scheme: light) {
+            background-color: palette(blue);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background-color: palette(green);
+
+        }
+    }
+
     &__wrapper {
         text-align: center;
 

@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import text from "../translations/text";
 import { motion } from "framer-motion";
+
+import Nav from "../components/Nav/Nav";
 import AnimatedText from "../components/AnimatedText/AnimatedText";
 
 export default function Home() {
@@ -38,31 +40,50 @@ export default function Home() {
    ]
 
   return (
-    <div className="home">
-      <motion.div
-        className="text-slide"
-        initial="hidden"
-        animate="visible"
-        variants={container}
-      >
-          <div className="text-slide__wrapper">
-            {slideOne.map((item, index) => {
-              return (<AnimatedText {...item} key={index} />)
-            })}
+    <>
+      <Nav currentLanguage={currentLanguage}/>
+      <div className="home">
+
+        <motion.div
+          className="text-slide"
+          initial="hidden"
+          animate="visible"
+          variants={container}
+        >
+          <div className="main-grid">
+            <div className="margin"/>
+            <div className="main-body">
+              <div className="text-slide__wrapper">
+                {slideOne.map((item, index) => {
+                  return (<AnimatedText {...item} key={index} />)
+                })}
+              </div>
+            </div>
+            <div className="margin"/>
           </div>
-      </motion.div>
-      <motion.div
-        className="text-slide"
-        initial="hidden"
-        animate="visible"
-        variants={container}
-      >
-          <div className="text-slide__wrapper">
-            {slideTwo.map((item, index) => {
-              return (<AnimatedText {...item} key={index} />)
-            })}
+        </motion.div>
+
+
+        <motion.div
+          className="text-slide text-slide--second"
+          initial="hidden"
+          animate="visible"
+          variants={container}
+        >
+          <div className="main-grid">
+            <div className="margin"/>
+            <div className="main-body">
+              <div className="text-slide__wrapper">
+                {slideTwo.map((item, index) => {
+                  return (<AnimatedText {...item} key={index} />)
+                })}
+              </div>
+            </div>
+            <div className="margin"/>
           </div>
-      </motion.div>
-    </div>
+        </motion.div>
+
+      </div>
+    </>
   );
 }
