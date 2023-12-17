@@ -1,71 +1,92 @@
 .text-slide {
-    height: calc(100vh - 106.8px);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: calc(100vh - 106.8px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &--second {
-        height: 100vh;
+  &--second {
+    height: 100vh;
 
-        @media (prefers-color-scheme: light) {
-            background-color: palette(blue);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            background-color: palette(green);
-
-        }
+    @media (prefers-color-scheme: light) {
+      background-color: palette(blue);
     }
 
-    &__wrapper {
-        text-align: center;
+    @media (prefers-color-scheme: dark) {
+      background-color: palette(green);
+    }
+  }
+
+  &__wrapper {
+    text-align: center;
+
+    .word-wrapper {
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    > p {
+      font-size: 4.8rem;
+      text-align: center;
+      font-weight: 300;
+      margin: 0;
+      display: inline-block;
+      line-height: 1.2;
+
+      @media only screen and (min-width: $screen-medium) {
+        font-size: 6rem;
+      }
+
+      @media only screen and (min-width: $screen-medium) {
+        font-size: 8rem;
+      }
+
+      @media only screen and (min-width: 1486px) {
+        font-size: 9.5rem;
+      }
+    }
+
+    > span {
+      font-family: "Da Vinci", serif;
+      font-style: italic;
+      font-size: 4.8rem;
+      text-align: center;
+      font-weight: 300;
+      margin: 0;
+      display: inline-block;
+      line-height: 1.4;
+
+      .word-wrapper {
+        padding-left: 6px;
+      }
+
+      @media only screen and (min-width: $screen-medium) {
+        font-size: 6rem;
 
         .word-wrapper {
-            display: inline-block;
-            overflow: hidden;
+          padding-left: 7px;
         }
+      }
 
-        > p {
-            font-size: 4.8rem;
-            text-align: center;
-            font-weight: 300;
-            margin: 0;
-            display: inline-block;
-            line-height: 1.2;
+      @media only screen and (min-width: $screen-large) {
+        font-size: 8rem;
 
-            @media only screen and (min-width: $screen-medium) {
-                font-size: 9.5rem;
-
-            }
+        .word-wrapper {
+          padding-left: 12px;
         }
+      }
 
-        > span {
-            font-family: "Da Vinci", serif;
-            font-style: italic;
-            font-size: 4.8rem;
-            text-align: center;
-            font-weight: 300;
-            margin: 0;
-            display: inline-block;
-            line-height: 1.4;
+      @media only screen and (min-width: 1486px) {
+        font-size: 9.5rem;
 
-            .word-wrapper {
-                padding-left: 6px;
-            }
-
-            @media only screen and (min-width: $screen-medium) {
-                font-size: 9.5rem;
-
-                .word-wrapper {
-                    padding-left: 15px;
-                }
-            }
-
+        .word-wrapper {
+          padding-left: 15px;
         }
-
-        span {
-            display: inline-block;
-        }
+      }
     }
+
+    span {
+      display: inline-block;
+    }
+  }
 }

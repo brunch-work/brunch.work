@@ -3,7 +3,8 @@ import text from "../translations/text";
 import { motion } from "framer-motion";
 
 import Nav from "../components/Nav/Nav";
-import AnimatedText from "../components/AnimatedText/AnimatedText";
+// import AnimatedText from "../components/AnimatedText/AnimatedText";
+import AnimatedTextSlide from "../components/AnimatedTextSlide";
 
 export default function Home() {
 
@@ -44,44 +45,17 @@ export default function Home() {
       <Nav currentLanguage={currentLanguage}/>
       <div className="home">
 
-        <motion.div
-          className="text-slide"
-          initial="hidden"
-          animate="visible"
-          variants={container}
-        >
-          <div className="main-grid">
-            <div className="margin"/>
-            <div className="main-body">
-              <div className="text-slide__wrapper">
-                {slideOne.map((item, index) => {
-                  return (<AnimatedText {...item} key={index} />)
-                })}
-              </div>
-            </div>
-            <div className="margin"/>
-          </div>
-        </motion.div>
+        <AnimatedTextSlide
+          container={container}
+          content={slideOne}
+          isSlideOne={true}
+          />
 
-
-        <motion.div
-          className="text-slide text-slide--second"
-          initial="hidden"
-          animate="visible"
-          variants={container}
-        >
-          <div className="main-grid">
-            <div className="margin"/>
-            <div className="main-body">
-              <div className="text-slide__wrapper">
-                {slideTwo.map((item, index) => {
-                  return (<AnimatedText {...item} key={index} />)
-                })}
-              </div>
-            </div>
-            <div className="margin"/>
-          </div>
-        </motion.div>
+        <AnimatedTextSlide
+          container={container}
+          content={slideTwo}
+          isSlideOne={false}
+        />
 
       </div>
     </>
