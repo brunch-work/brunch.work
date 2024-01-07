@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import text from "../translations/text";
-import { motion } from "framer-motion";
 
 import Nav from "../components/Nav/Nav";
 // import AnimatedText from "../components/AnimatedText/AnimatedText";
@@ -15,6 +14,11 @@ export default function Home() {
     visible: {
       transition: {
         staggerChildren: 0.025
+      }
+    },
+    hidden: {
+      transition: {
+        staggerChildren: 0
       }
     }
   };
