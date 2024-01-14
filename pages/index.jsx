@@ -1,14 +1,15 @@
 import { useRouter } from "next/router";
 import text from "../translations/text";
+import { useEffect } from "react";
 
 import Nav from "../components/Nav/Nav";
-// import AnimatedText from "../components/AnimatedText/AnimatedText";
 import AnimatedTextSlide from "../components/AnimatedTextSlide";
 
 export default function Home() {
 
-   const { locale } = useRouter();
-   const currentLanguage = text[locale];
+  const router = useRouter();
+  const { locale } = router;
+  const currentLanguage = text[locale];
 
   const container = {
     visible: {
@@ -46,7 +47,7 @@ export default function Home() {
 
   return (
     <>
-      <Nav currentLanguage={currentLanguage}/>
+      <Nav currentLanguage={currentLanguage} locale={locale}/>
       <div className="home">
 
         <AnimatedTextSlide
