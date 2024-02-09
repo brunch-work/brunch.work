@@ -26,12 +26,21 @@
 
     .contact {
       display: flex;
-      justify-content: baseline;
+      align-items: baseline;
       gap: clamp(1rem, 0.6vw, 0.8vw);
 
       svg {
-        height: clamp(1.4rem, 1vw, 1vw);
-        width: clamp(1.4rem, 1vw, 1vw);
+        height: clamp(1rem, 1vw, 1vw);
+        width: clamp(1rem, 1vw, 1vw);
+
+        path {
+          @media (prefers-color-scheme: light) {
+            fill: palette(black);
+          }
+          @media (prefers-color-scheme: dark) {
+            fill: palette(beige);
+          }
+        }
       }
     }
 

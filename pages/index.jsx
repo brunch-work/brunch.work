@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import text from "../translations/text";
-import { useEffect } from "react";
 
 import Nav from "../components/Nav/Nav";
 import AnimatedTextSlide from "../components/AnimatedTextSlide";
@@ -10,6 +9,8 @@ export default function Home() {
   const router = useRouter();
   const { locale } = router;
   const currentLanguage = text[locale];
+  let slideOne = [];
+  let slideTwo = [];
 
   const container = {
     visible: {
@@ -24,7 +25,8 @@ export default function Home() {
     }
   };
 
-   const slideOne = [
+  if (currentLanguage === "en") {
+    slideOne = [
     {type: 'p', text: currentLanguage.hero_1},
     {type: 'span', text: currentLanguage.hero_2},
     {type: 'p', text: currentLanguage.hero_3},
@@ -36,7 +38,7 @@ export default function Home() {
     {type: 'span', text: currentLanguage.hero_9},
    ]
 
-   const slideTwo = [
+    slideTwo = [
     {type: 'p', text: currentLanguage.hero_2_1},
     {type: 'span', text: currentLanguage.hero_2_2},
     {type: 'p', text: currentLanguage.hero_2_3},
@@ -46,6 +48,32 @@ export default function Home() {
     {type: 'span', text: currentLanguage.hero_2_7},
     {type: 'p', text: currentLanguage.hero_2_8}
    ]
+  } else {
+    slideOne = [
+      { type: "p", text: currentLanguage.hero_1 },
+      { type: "span", text: currentLanguage.hero_2 },
+      { type: "p", text: currentLanguage.hero_3 },
+      { type: locale === "fr" ? "p" : "span", text: currentLanguage.hero_4 },
+      { type: "span", text: currentLanguage.hero_5 },
+      { type: "span", text: currentLanguage.hero_6 },
+      { type: "p", text: currentLanguage.hero_7 },
+      { type: "span", text: currentLanguage.hero_8 },
+      { type: "span", text: currentLanguage.hero_9 },
+    ];
+
+    slideTwo = [
+      { type: "p", text: currentLanguage.hero_2_1 },
+      { type: "span", text: currentLanguage.hero_2_2 },
+      { type: "p", text: currentLanguage.hero_2_3 },
+      { type: "p", text: currentLanguage.hero_2_4 },
+      { type: "p", text: currentLanguage.hero_2_5 },
+      { type: "span", text: currentLanguage.hero_2_6 },
+      { type: "p", text: currentLanguage.hero_2_7 },
+      { type: "p", text: currentLanguage.hero_2_8 },
+    ];
+  }
+
+
 
   return (
     <>

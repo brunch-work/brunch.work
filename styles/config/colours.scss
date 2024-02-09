@@ -4,32 +4,38 @@
  */
 
 // Base colours
-$color-black: #1C1F2A;
-$color-beige: #D7D2CB;
-$color-yellow: #D9FC00;
-$color-orange: #EF411B;
-$color-blue: #4845D2;
-$color-green: #0C6029;
-
+$color-black: #1c1f2a;
+$color-beige: #d7d2cb;
+$color-yellow: #d9fc00;
+$color-orange: #ef411b;
+$color-blue: #4845d2;
+$color-blue-alt: #302dd7;
+$color-green: #0c6029;
 
 $palettes: (
-    black: (base: $color-black,
-    ),
-    beige: (base: $color-beige,
-    ),
-    orange: (base: $color-orange,
-    ),
-    yellow: (base: $color-yellow,
-    ),
-    green: (base: $color-green,
-    ),
-    blue: (base: $color-blue,
-    ),
+  black: (
+    base: $color-black,
+  ),
+  beige: (
+    base: $color-beige,
+  ),
+  orange: (
+    base: $color-orange,
+  ),
+  yellow: (
+    base: $color-yellow,
+  ),
+  green: (
+    base: $color-green,
+  ),
+  blue: (
+    base: $color-blue,
+    alt: $color-blue-alt,
+  ),
 );
 
 /* stylelint-disable */
 // Generate Palettes
 @function palette($palette, $tone: "base") {
-
-    @return map-get(map-get($palettes, $palette), $tone);
+  @return map-get(map-get($palettes, $palette), $tone);
 }
