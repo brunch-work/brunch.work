@@ -11,8 +11,11 @@
 
   &__wrapper {
     text-align: left;
-    max-width: 80%;
-    padding-top: 8vh;
+
+    @media only screen and (min-width: $screen-medium) {
+      max-width: 80%;
+      padding-top: 8vh;
+    }
 
     .word-wrapper {
       display: inline-block;
@@ -20,22 +23,18 @@
     }
 
     > p {
-      font-size: 4.8rem;
       text-align: left;
       font-weight: 300;
       margin: 0;
       display: inline-block;
       line-height: 1.2;
-
-      @media only screen and (min-width: $screen-medium) {
-        font-size: clamp(4rem, 4.6vw, 8vw);
-      }
+      font-size: clamp(4rem, 4.6vw, 8vw);
     }
 
     > span {
+      font-size: clamp(4rem, 4.6vw, 8vw);
       font-family: "Da Vinci", serif;
       font-style: italic;
-      font-size: 4.8rem;
       text-align: left;
       font-weight: 300;
       margin: 0;
@@ -47,8 +46,6 @@
       }
 
       @media only screen and (min-width: $screen-medium) {
-        font-size: clamp(4rem, 4.6vw, 8vw);
-
         .word-wrapper {
           padding-left: 7px;
         }
