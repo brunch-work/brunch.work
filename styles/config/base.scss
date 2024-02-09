@@ -1,42 +1,41 @@
 :root {
-    color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 html,
 body {
-    height: 100%;
-    font-family: "Monument Grotesk", Helvetica, sans-serif;
-    font-feature-settings: 'dlig' on, 'ss02' on;
+  height: 100%;
+  font-family: "Monument Grotesk", Helvetica, sans-serif;
+  font-feature-settings: "dlig" on, "ss02" on;
 
-    @media (prefers-color-scheme: light) {
-        background-color: palette(beige);
-    }
+  @media (prefers-color-scheme: light) {
+    background-color: palette(beige);
+  }
 
-    @media (prefers-color-scheme: dark) {
-        background-color: palette(black);
-    }
+  @media (prefers-color-scheme: dark) {
+    background-color: palette(black);
+  }
 }
 
-
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1.6rem;
-    line-height: 1.3;
-    overflow-x: hidden;
-    margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  overflow-x: hidden;
+  margin: 0;
 
-    @media (prefers-color-scheme: light) {
-        color: palette(black);
-    }
+  @media (prefers-color-scheme: light) {
+    color: palette(black);
+  }
 
-    @media (prefers-color-scheme: dark) {
-        color: palette(beige);
-    }
+  @media (prefers-color-scheme: dark) {
+    color: palette(beige);
+  }
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }

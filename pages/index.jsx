@@ -31,7 +31,9 @@ export default function Home() {
     {type: locale === 'fr' ? 'p' : 'span', text: currentLanguage.hero_4},
     {type: 'span', text: currentLanguage.hero_5},
     {type: 'p', text: currentLanguage.hero_6},
-    {type: 'span', text: currentLanguage.hero_7},
+    {type: 'p', text: currentLanguage.hero_7},
+    {type: 'span', text: currentLanguage.hero_8},
+    {type: 'span', text: currentLanguage.hero_9},
    ]
 
    const slideTwo = [

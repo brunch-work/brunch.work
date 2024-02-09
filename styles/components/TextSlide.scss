@@ -1,5 +1,4 @@
 .text-slide {
-  // height: calc(100dvh - 106.8px + 0.1px);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -8,22 +7,12 @@
 
   &--second {
     height: 100vh;
-
-    @media (prefers-color-scheme: light) {
-      background-color: palette(blue);
-
-      .word-wrapper span {
-        color: palette(beige);
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      background-color: palette(green);
-    }
   }
 
   &__wrapper {
-    text-align: center;
+    text-align: left;
+    max-width: 80%;
+    padding-top: 8vh;
 
     .word-wrapper {
       display: inline-block;
@@ -32,22 +21,14 @@
 
     > p {
       font-size: 4.8rem;
-      text-align: center;
+      text-align: left;
       font-weight: 300;
       margin: 0;
       display: inline-block;
       line-height: 1.2;
 
       @media only screen and (min-width: $screen-medium) {
-        font-size: 6rem;
-      }
-
-      @media only screen and (min-width: $screen-medium) {
-        font-size: 8rem;
-      }
-
-      @media only screen and (min-width: 1486px) {
-        font-size: 9.5rem;
+        font-size: clamp(4rem, 4.6vw, 8vw);
       }
     }
 
@@ -55,7 +36,7 @@
       font-family: "Da Vinci", serif;
       font-style: italic;
       font-size: 4.8rem;
-      text-align: center;
+      text-align: left;
       font-weight: 300;
       margin: 0;
       display: inline-block;
@@ -66,26 +47,10 @@
       }
 
       @media only screen and (min-width: $screen-medium) {
-        font-size: 6rem;
+        font-size: clamp(4rem, 4.6vw, 8vw);
 
         .word-wrapper {
           padding-left: 7px;
-        }
-      }
-
-      @media only screen and (min-width: $screen-large) {
-        font-size: 8rem;
-
-        .word-wrapper {
-          padding-left: 12px;
-        }
-      }
-
-      @media only screen and (min-width: 1486px) {
-        font-size: 9.5rem;
-
-        .word-wrapper {
-          padding-left: 15px;
         }
       }
     }

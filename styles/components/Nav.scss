@@ -1,9 +1,13 @@
 .nav {
-  padding: 2.7rem 0;
+  padding: 2rem 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+
+  @media only screen and (min-width: $screen-medium) {
+    padding: 6.4rem 0;
+  }
 
   &__wrapper {
     display: flex;
@@ -13,32 +17,30 @@
 
   &__right {
     display: flex;
-    gap: 2.5rem;
-    align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    font-size: clamp(1.6rem, 1.8vw, 3.4vw);
+    line-height: 80%;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: clamp(4rem, 4.6vw, 8vw);
 
-    @media only screen and (min-width: $screen-medium) {
-      flex-direction: row;
+    .contact {
+      display: flex;
+      justify-content: baseline;
+      gap: clamp(1rem, 0.6vw, 0.8vw);
+
+      svg {
+        height: clamp(1.4rem, 1vw, 1vw);
+        width: clamp(1.4rem, 1vw, 1vw);
+      }
+    }
+
+    .lang {
+      margin: 0;
     }
   }
 
   &__logo {
-    height: 2.4rem;
-
-    @media only screen and (min-width: $screen-medium) {
-      height: 3rem;
-    }
-
-    @media (prefers-color-scheme: light) {
-      > path {
-        fill: palette(black);
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      > path {
-        fill: palette(beige);
-      }
-    }
+    height: clamp(4rem, 4.6vw, 8vw);
   }
 }
