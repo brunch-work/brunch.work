@@ -1,16 +1,22 @@
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { useRouter } from "next/router";
+import { useRef } from "react";
 import text from "../translations/text";
 
 import Nav from "../components/Nav/Nav";
 import AnimatedTextSlide from "../components/AnimatedTextSlide";
+import useTranslateSlide from "../hooks/useTranslateSlide";
 
 export default function Home() {
 
   const router = useRouter();
   const { locale } = router;
   const currentLanguage = text[locale];
-  let slideOne = [];
-  let slideTwo = [];
+  const {slideOne, slideTwo} = useTranslateSlide(currentLanguage, locale);
+  const slideOneRef = useRef(null);
+  const slideTwoRef = useRef(null);
+
 
   const container = {
     visible: {
@@ -25,68 +31,20 @@ export default function Home() {
     }
   };
 
-  if (currentLanguage === "en") {
-    slideOne = [
-    {type: 'p', text: currentLanguage.hero_1},
-    {type: 'span', text: currentLanguage.hero_2},
-    {type: 'p', text: currentLanguage.hero_3},
-    {type: locale === 'fr' ? 'p' : 'span', text: currentLanguage.hero_4},
-    {type: 'span', text: currentLanguage.hero_5},
-    {type: 'p', text: currentLanguage.hero_6},
-    {type: 'p', text: currentLanguage.hero_7},
-    {type: 'span', text: currentLanguage.hero_8},
-    {type: 'span', text: currentLanguage.hero_9},
-   ]
-
-    slideTwo = [
-    {type: 'p', text: currentLanguage.hero_2_1},
-    {type: 'span', text: currentLanguage.hero_2_2},
-    {type: 'p', text: currentLanguage.hero_2_3},
-    {type: 'p', text: currentLanguage.hero_2_4},
-    {type: 'span', text: currentLanguage.hero_2_5},
-    {type: 'p', text: currentLanguage.hero_2_6},
-    {type: 'span', text: currentLanguage.hero_2_7},
-    {type: 'p', text: currentLanguage.hero_2_8}
-   ]
-  } else {
-    slideOne = [
-      { type: "p", text: currentLanguage.hero_1 },
-      { type: "span", text: currentLanguage.hero_2 },
-      { type: "p", text: currentLanguage.hero_3 },
-      { type: locale === "fr" ? "p" : "span", text: currentLanguage.hero_4 },
-      { type: "span", text: currentLanguage.hero_5 },
-      { type: "span", text: currentLanguage.hero_6 },
-      { type: "p", text: currentLanguage.hero_7 },
-      { type: "span", text: currentLanguage.hero_8 },
-      { type: "span", text: currentLanguage.hero_9 },
-    ];
-
-    slideTwo = [
-      { type: "p", text: currentLanguage.hero_2_1 },
-      { type: "span", text: currentLanguage.hero_2_2 },
-      { type: "p", text: currentLanguage.hero_2_3 },
-      { type: "p", text: currentLanguage.hero_2_4 },
-      { type: "p", text: currentLanguage.hero_2_5 },
-      { type: "span", text: currentLanguage.hero_2_6 },
-      { type: "p", text: currentLanguage.hero_2_7 },
-      { type: "p", text: currentLanguage.hero_2_8 },
-    ];
-  }
-
-
-
   return (
     <>
       <Nav currentLanguage={currentLanguage} locale={locale}/>
       <div className="home">
 
         <AnimatedTextSlide
+          ref={slideOneRef}
           container={container}
           content={slideOne}
           isSlideOne={true}
           />
 
         <AnimatedTextSlide
+          ref={slideTwoRef}
           container={container}
           content={slideTwo}
           isSlideOne={false}
