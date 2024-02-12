@@ -1,4 +1,5 @@
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
 import { useGSAP } from "@gsap/react";
 import { useRouter } from "next/router";
 import { useRef } from "react";
@@ -16,7 +17,7 @@ export default function Home() {
   const {slideOne, slideTwo} = useTranslateSlide(currentLanguage, locale);
   const slideOneRef = useRef(null);
   const slideTwoRef = useRef(null);
-
+  gsap.registerPlugin(ScrollTrigger);
 
   const container = {
     visible: {
