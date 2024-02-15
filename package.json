@@ -9,6 +9,7 @@
     "@gsap/react": "^2.1.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.19.2",
+    "@studio-freight/react-lenis": "^0.0.43",
     "@vercel/analytics": "^1.0.2",
     "framer-motion": "^10.16.5",
     "gsap": "^3.12.5",

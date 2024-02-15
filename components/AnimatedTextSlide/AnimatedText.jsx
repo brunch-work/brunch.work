@@ -48,6 +48,7 @@ export default function AnimatedText(props) {
         // Wrap each word in the Wrapper component
         <Wrapper key={index}>
             <motion.span
+              className="word"
               style={{ display: "inline-block" }}
               variants={item}
             >
