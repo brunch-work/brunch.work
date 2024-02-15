@@ -6,10 +6,10 @@ export default function AnimatedText(props) {
       return <span className="word-wrapper">{props.children}</span>;
   }
 
-  const tagMap = {
-    p: "p",
-    span: "span",
-  };
+  // const tagMap = {
+  //   p: "p",
+  //   span: "span",
+  // };
 
   const item = {
       hidden: {
@@ -38,11 +38,11 @@ export default function AnimatedText(props) {
   return word.push("\u00A0");
   });
 
-  // Get the tag name from tagMap
-  const Tag = tagMap[props.type];
+  // // Get the tag name from tagMap
+  // const Tag = tagMap[props.type];
 
   return (
-  <Tag>
+  <div className={props.class}>
     {words.map((word, index) => {
       return (
         // Wrap each word in the Wrapper component
@@ -57,6 +57,6 @@ export default function AnimatedText(props) {
         </Wrapper>
       );
     })}
-  </Tag>
+  </div>
   )
 }

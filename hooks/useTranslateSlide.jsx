@@ -3,51 +3,51 @@ const useTranslateSlide = (currentLanguage, locale) => {
     let slideOne = [];
     let slideTwo = [];
 
-    if (currentLanguage === "en") {
+    if (locale === "en") {
       slideOne = [
-        { type: "p", text: currentLanguage.hero_1 },
-        { type: "span", text: currentLanguage.hero_2 },
-        { type: "p", text: currentLanguage.hero_3 },
-        { type: locale === "fr" ? "p" : "span", text: currentLanguage.hero_4 },
-        { type: "span", text: currentLanguage.hero_5 },
-        { type: "p", text: currentLanguage.hero_6 },
-        { type: "p", text: currentLanguage.hero_7 },
-        { type: "span", text: currentLanguage.hero_8 },
-        { type: "span", text: currentLanguage.hero_9 },
+        { class: "font--main", text: currentLanguage.hero_1 },
+        { class: "font--alt", text: currentLanguage.hero_2 },
+        { class: "font--main", text: currentLanguage.hero_3 },
+        { class: "font--alt", text: currentLanguage.hero_4 },
+        { class: "font--alt", text: currentLanguage.hero_5 },
+        { class: "font--main", text: currentLanguage.hero_6 },
+        { class: "font--main", text: currentLanguage.hero_7 },
+        { class: "font--alt", text: currentLanguage.hero_8 },
+        { class: "font--alt", text: currentLanguage.hero_9 },
       ];
 
       slideTwo = [
-        { type: "p", text: currentLanguage.hero_2_1 },
-        { type: "span", text: currentLanguage.hero_2_2 },
-        { type: "p", text: currentLanguage.hero_2_3 },
-        { type: "p", text: currentLanguage.hero_2_4 },
-        { type: "span", text: currentLanguage.hero_2_5 },
-        { type: "p", text: currentLanguage.hero_2_6 },
-        { type: "span", text: currentLanguage.hero_2_7 },
-        { type: "p", text: currentLanguage.hero_2_8 },
+        { class: "font--main", text: currentLanguage.hero_2_1 },
+        { class: "font--alt", text: currentLanguage.hero_2_2 },
+        { class: "font--main", text: currentLanguage.hero_2_3 },
+        { class: "font--main", text: currentLanguage.hero_2_4 },
+        { class: "font--alt", text: currentLanguage.hero_2_5 },
+        { class: "font--main", text: currentLanguage.hero_2_6 },
+        { class: "font--alt", text: currentLanguage.hero_2_7 },
+        { class: "font--main", text: currentLanguage.hero_2_8 },
       ];
     } else {
       slideOne = [
-        { type: "p", text: currentLanguage.hero_1 },
-        { type: "span", text: currentLanguage.hero_2 },
-        { type: "p", text: currentLanguage.hero_3 },
-        { type: locale === "fr" ? "p" : "span", text: currentLanguage.hero_4 },
-        { type: "span", text: currentLanguage.hero_5 },
-        { type: "span", text: currentLanguage.hero_6 },
-        { type: "p", text: currentLanguage.hero_7 },
-        { type: "span", text: currentLanguage.hero_8 },
-        { type: "span", text: currentLanguage.hero_9 },
+        { class: "font--main", text: currentLanguage.hero_1 },
+        { class: "font--alt", text: currentLanguage.hero_2 },
+        { class: "font--main", text: currentLanguage.hero_3 },
+        { class: "font--main", text: currentLanguage.hero_4 },
+        { class: "font--main", text: currentLanguage.hero_5 },
+        { class: "font--alt", text: currentLanguage.hero_6 },
+        { class: "font--alt", text: currentLanguage.hero_7 },
+        { class: "font--main", text: currentLanguage.hero_8 },
+        { class: "font--alt", text: currentLanguage.hero_9 },
       ];
 
       slideTwo = [
-        { type: "p", text: currentLanguage.hero_2_1 },
-        { type: "span", text: currentLanguage.hero_2_2 },
-        { type: "p", text: currentLanguage.hero_2_3 },
-        { type: "p", text: currentLanguage.hero_2_4 },
-        { type: "p", text: currentLanguage.hero_2_5 },
-        { type: "span", text: currentLanguage.hero_2_6 },
-        { type: "p", text: currentLanguage.hero_2_7 },
-        { type: "p", text: currentLanguage.hero_2_8 },
+        { class: "font--main", text: currentLanguage.hero_2_1 },
+        { class: "font--alt", text: currentLanguage.hero_2_2 },
+        { class: "font--main", text: currentLanguage.hero_2_3 },
+        { class: "font--main", text: currentLanguage.hero_2_4 },
+        { class: "font--main", text: currentLanguage.hero_2_5 },
+        { class: "font--main", text: currentLanguage.hero_2_6 },
+        { class: "font--alt", text: currentLanguage.hero_2_7 },
+        { class: "font--alt", text: currentLanguage.hero_2_8 },
       ];
     }
 

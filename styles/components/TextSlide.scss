@@ -23,24 +23,31 @@
       overflow: hidden;
     }
 
-    > p {
+    .font--main {
       text-align: left;
       font-weight: 300;
       margin: 0;
       display: inline-block;
       line-height: 1.2;
       font-size: clamp(4rem, 4.6vw, 8vw);
+
+      * {
+        font-family: "Monument Grotesk", Helvetica, sans-serif;
+      }
     }
 
-    > span {
+    .font--alt {
       font-size: clamp(4rem, 4.6vw, 8vw);
-      font-family: "Da Vinci", serif;
       font-style: italic;
       text-align: left;
       font-weight: 300;
       margin: 0;
       display: inline-block;
       line-height: 1.4;
+
+      * {
+        font-family: "Da Vinci", serif;
+      }
 
       .word-wrapper {
         padding-left: 6px;
