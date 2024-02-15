@@ -16,11 +16,12 @@ export default function AnimatedTextSlide({ container, content, isSlideOne }) {
         <div className="margin" />
         <div className="main-body">
           <div className="text-slide__wrapper">
-            {content.map((item, index) => {
+            {content.map((word, index) => {
               return (
                 <AnimatedText
-                  {...item}
                   key={index}
+                  word={word.word}
+                  className={word.class}
                 />
               );
             })}
