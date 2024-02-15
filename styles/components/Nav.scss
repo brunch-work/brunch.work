@@ -4,8 +4,23 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(180deg, #1c1f2a 0%, rgba(28, 31, 42, 0) 103.75%);
   z-index: 99999;
+
+  @media (prefers-color-scheme: light) {
+    background: linear-gradient(
+      180deg,
+      #d7d2cb 0%,
+      rgba(215, 210, 203, 0) 103.75%
+    );
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(
+      180deg,
+      #1c1f2a 0%,
+      rgba(28, 31, 42, 0) 103.75%
+    );
+  }
 
   @media only screen and (min-width: $screen-medium) {
     padding: 6.4rem 0;
