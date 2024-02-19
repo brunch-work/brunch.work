@@ -1,10 +1,10 @@
 .nav {
-  padding: 2rem 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99999;
+  padding-block: clamp(2rem, 3vw, 6.4rem);
 
   @media (prefers-color-scheme: light) {
     background: linear-gradient(
@@ -22,9 +22,9 @@
     );
   }
 
-  @media only screen and (min-width: $screen-medium) {
-    padding: 6.4rem 0;
-  }
+  // @media only screen and (min-width: $screen-medium) {
+  //   padding: 6.4rem 0;
+  // }
 
   &__wrapper {
     display: flex;
@@ -47,8 +47,8 @@
       gap: clamp(1rem, 0.6vw, 0.8vw);
 
       svg {
-        height: clamp(1rem, 1vw, 0.85vw);
-        width: clamp(1rem, 1vw, 0.85vw);
+        height: clamp(1rem, 1vw, 0.9vw);
+        width: clamp(1rem, 1vw, 0.9vw);
 
         path {
           @media (prefers-color-scheme: light) {
