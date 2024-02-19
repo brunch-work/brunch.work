@@ -35,11 +35,11 @@
   &__right {
     display: flex;
     flex-direction: column;
-    font-size: clamp(1.6rem, 1.8vw, 3.4vw);
+    font-size: clamp(1.6rem, 1.8vw, 1.6vw);
     line-height: 80%;
     align-items: flex-end;
     justify-content: space-between;
-    height: clamp(4rem, 4.6vw, 8vw);
+    height: clamp(4rem, 4.6vw, 4vw);
 
     .contact {
       display: flex;
@@ -47,8 +47,8 @@
       gap: clamp(1rem, 0.6vw, 0.8vw);
 
       svg {
-        height: clamp(1rem, 1vw, 1vw);
-        width: clamp(1rem, 1vw, 1vw);
+        height: clamp(1rem, 1vw, 0.85vw);
+        width: clamp(1rem, 1vw, 0.85vw);
 
         path {
           @media (prefers-color-scheme: light) {
@@ -67,7 +67,7 @@
   }
 
   &__logo {
-    height: clamp(4rem, 4.6vw, 8vw);
-    width: clamp(4rem, 4.6vw, 8vw);
+    height: clamp(4rem, 4.6vw, 4vw);
+    width: clamp(4rem, 4.6vw, 4vw);
   }
 }

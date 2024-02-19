@@ -16,8 +16,6 @@ export default function AnimatedText({ word, className }) {
     },
   };
 
-  console.log(`"${word}"`);
-
   return (
     <div className={className}>
       <Wrapper>

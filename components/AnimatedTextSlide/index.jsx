@@ -6,7 +6,7 @@ export default function AnimatedTextSlide({ container, content, isSlideOne }) {
 
   return (
     <motion.div
-      className={isSlideOne ? "text-slide" : "text-slide text-slide--second"}
+      className={isSlideOne ? "slide hero" : "slide hero hero--second"}
       initial="hidden"
       whileInView="visible"
       variants={container}
@@ -15,7 +15,7 @@ export default function AnimatedTextSlide({ container, content, isSlideOne }) {
       <div className="main-grid">
         <div className="margin" />
         <div className="main-body">
-          <div className="text-slide__wrapper">
+          <div className="hero__wrapper">
             {content.map((word, index) => {
               return (
                 <AnimatedText
