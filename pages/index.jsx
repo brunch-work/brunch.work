@@ -40,7 +40,7 @@ export default function Home(pageProps) {
           isSlideOne={false}
         />
 
-        <div className="services">
+        <div className="slide services">
           <div className="main-grid">
             <div className="margin" />
             <div className="main-body">
