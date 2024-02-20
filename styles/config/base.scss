@@ -19,7 +19,7 @@ body {
 html {
   font-size: 62.5%;
   min-height: 100%;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   height: 100lvh;
   overflow-y: scroll;
   box-sizing: border-box;
