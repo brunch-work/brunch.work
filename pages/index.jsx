@@ -2,10 +2,11 @@ import { useRouter } from "next/router";
 import text from "../translations/text";
 
 import Nav from "../components/Nav/Nav";
+import Footer from "../components/Footer/index";
 import AnimatedTextSlide from "../components/AnimatedTextSlide";
 import useTranslateSlide from "../hooks/useTranslateSlide";
 
-export default function Home(pageProps) {
+export default function Home() {
   const router = useRouter();
   const { locale } = router;
   const currentLanguage = text[locale];
@@ -88,10 +89,13 @@ export default function Home(pageProps) {
                   </svg>
                 </div>
               </div>
+
             </div>
             <div className="margin" />
           </div>
         </div>
+
+        <Footer />
       </div>
     </>
   );

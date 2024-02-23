@@ -1,6 +1,21 @@
+import { useGSAP } from "@gsap/react";
+
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 function Nav({ currentLanguage, locale }) {
+
+  const { contextSafe } = useGSAP();
+
+  // const scrollToContact = contextSafe(() => {
+  //   gsap.to(window, {duration: 1, scrollTo: "#contact"})
+  // })
+
+  // console.log(lenis);
+
+  // let scrollToContact;
+
+  // const scrollToContact = lenis.ScrollTo("#contact", {duration: 1})
+
   return (
     <div className="nav main-grid">
       <div className="margin"></div>
@@ -50,8 +65,8 @@ function Nav({ currentLanguage, locale }) {
           </div>
 
           <div className="nav__right">
-            <a href="#footer">
-              <div className="contact">
+            <a href="#contact">
+              <div className="nav__contact">
                 {currentLanguage.contact}
                 <svg
                   width="18"
@@ -67,8 +82,8 @@ function Nav({ currentLanguage, locale }) {
                   />
                 </svg>
               </div>
-
             </a>
+
 
             <LanguageSwitcher currentLanguage={currentLanguage} />
           </div>

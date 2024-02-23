@@ -1,10 +1,11 @@
 import "../styles/main.scss";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
-import { useLenis } from "@studio-freight/react-lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
+import Layout from "../layouts";
 
 if (typeof window !== "undefined") {
   // reset scroll position
@@ -22,12 +23,44 @@ if (typeof window !== "undefined") {
 
 function App({ Component, pageProps }) {
 
-  const lenis = useLenis(ScrollTrigger.update);
 
-  useEffect(() => ScrollTrigger.refresh(), [lenis]);
+  // const lenis = useLenis(ScrollTrigger.update);
+
+  // useEffect(() => {
+  //   ScrollTrigger.refresh()
+  // }, [lenis]);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0);
+
+    const anchorLinks = [...document.querySelectorAll("a[href]")];
+    anchorLinks
+      .filter((a) => a.href.includes("/#"))
+      .forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          const href = "#" + a.href?.split("/#").at(-1);
+          console.log(href);
+          lenis.scrollTo(href);
+        });
+      });
+  },[])
+
 
   return (
-    <>
+    <Layout>
       <Head>
         <title>brunch</title>
         <meta name="robots" content="all" />
@@ -42,7 +75,7 @@ function App({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
       <Analytics />
-    </>
+    </Layout>
   );
 }
 
