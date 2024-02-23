@@ -22,9 +22,12 @@ html {
   overflow-y: scroll;
   box-sizing: border-box;
   scroll-snap-stop: always;
+  scroll-behavior: smooth;
 
   @media only screen and (min-width: $screen-medium) {
-    // scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
   }
 }
 

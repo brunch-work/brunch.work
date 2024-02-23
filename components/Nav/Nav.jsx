@@ -1,20 +1,19 @@
+'use client';
 import { useGSAP } from "@gsap/react";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import gsap from "gsap";
 
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 function Nav({ currentLanguage, locale }) {
 
+  gsap.registerPlugin(ScrollToPlugin)
+
   const { contextSafe } = useGSAP();
 
-  // const scrollToContact = contextSafe(() => {
-  //   gsap.to(window, {duration: 1, scrollTo: "#contact"})
-  // })
-
-  // console.log(lenis);
-
-  // let scrollToContact;
-
-  // const scrollToContact = lenis.ScrollTo("#contact", {duration: 1})
+  const scrollToContact = contextSafe(() => {
+    gsap.to(".home", {duration: 2, scrollTo: "#contact"})
+  })
 
   return (
     <div className="nav main-grid">
