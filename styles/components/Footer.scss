@@ -1,0 +1,90 @@
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  .main-grid,
+  .main-body {
+    height: 100%;
+  }
+
+  .slide__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .contact {
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      flex-grow: 1;
+
+      .eyebrow {
+        font-family: "Da Vinci", serif;
+        font-size: 6.4rem;
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: baseline;
+      gap: 3.4rem;
+      position: relative;
+
+      .email {
+        font-size: 8rem;
+        font-weight: 300;
+        cursor: pointer;
+      }
+
+      p {
+        position: absolute;
+        bottom: -3em;
+        left: 0;
+      }
+    }
+  }
+
+  .block {
+    &--top,
+    &--bottom {
+      height: 14rem;
+    }
+
+    &--bottom {
+      display: flex;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .mtl {
+          display: flex;
+          align-items: baseline;
+          gap: 0.6rem;
+        }
+
+        .email {
+          display: flex;
+
+          .clipboard {
+            cursor: pointer;
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+
+        > * {
+          margin: 0 0 1rem;
+        }
+      }
+    }
+  }
+}
