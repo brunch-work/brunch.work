@@ -1,19 +1,6 @@
-'use client';
-import { useGSAP } from "@gsap/react";
-import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
-import gsap from "gsap";
-
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 function Nav({ currentLanguage, locale }) {
-
-  gsap.registerPlugin(ScrollToPlugin)
-
-  const { contextSafe } = useGSAP();
-
-  const scrollToContact = contextSafe(() => {
-    gsap.to(".home", {duration: 2, scrollTo: "#contact"})
-  })
 
   return (
     <div className="nav main-grid">
