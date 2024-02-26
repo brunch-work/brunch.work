@@ -63,7 +63,13 @@
   }
 
   &__logo {
-    height: clamp(4rem, 4.6vw, 4vw);
-    width: clamp(4rem, 4.6vw, 4vw);
+    height: clamp(4rem, 4.6vw, 9rem);
+    width: clamp(4rem, 4.6vw, 9rem);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: rotate(90deg);
+      transition: transform 0.2s ease-in-out;
+    }
   }
 }

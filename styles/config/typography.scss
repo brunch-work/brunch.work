@@ -1,6 +1,6 @@
 @mixin selection {
   @media (prefers-color-scheme: dark) {
-    color: palette(yellow);
+    color: palette(green, light);
   }
 
   @media (prefers-color-scheme: light) {

@@ -11,6 +11,7 @@ $color-orange: #ef411b;
 $color-blue: #4845d2;
 $color-blue-alt: #302dd7;
 $color-green: #0c6029;
+$color-green-light: #009639;
 
 $palettes: (
   black: (
@@ -27,6 +28,7 @@ $palettes: (
   ),
   green: (
     base: $color-green,
+    light: $color-green-light,
   ),
   blue: (
     base: $color-blue,
