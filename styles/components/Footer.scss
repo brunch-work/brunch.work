@@ -3,9 +3,11 @@
   align-items: center;
   width: 100%;
   height: 60vh;
+  margin-top: 10rem;
 
   @media only screen and (min-width: $screen-medium) {
     height: 100vh;
+    margin-top: 0;
   }
 
   .main-grid,
@@ -134,7 +136,7 @@
   .block {
     &--top,
     &--bottom {
-      height: 14rem;
+      min-height: 14rem;
     }
 
     &--top {
