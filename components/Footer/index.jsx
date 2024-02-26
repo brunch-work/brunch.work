@@ -68,7 +68,7 @@ export default function Footer() {
               </div>
               <div className="block--bottom">
                 <div className="column copyright">
-                  <p>© brunch 2024</p>
+                  <p>© Brunch 2024</p>
                 </div>
                 <div className="col-3">
                   <div className="column">

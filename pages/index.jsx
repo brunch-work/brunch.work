@@ -74,7 +74,9 @@ export default function Home() {
               <div className="block block--contact">
                 <div className="column column--left" />
                 <div className="column column--right">
-                  <p>See our detailed capabilities</p>
+                  <a href="https://3l27bruyzob.typeform.com/to/NpR7mDJ8" target="_blank">
+                    See our detailed capabilities
+                  </a>
                   <svg
                     width="18"
                     height="18"
@@ -90,7 +92,6 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-
             </div>
             <div className="margin" />
           </div>

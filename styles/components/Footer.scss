@@ -29,21 +29,21 @@
       flex-grow: 1;
 
       @media only screen and (min-width: $screen-medium) {
-        gap: 2rem;
+        gap: clamp(0.8rem, 1vw, 2rem);
         justify-content: center;
       }
 
       .eyebrow {
         font-family: "Da Vinci", serif;
         font-size: 6.4rem;
-        font-size: clamp(2.5rem, 2vw, 6.4rem);
+        font-size: clamp(2.5rem, 3vw, 6.4rem);
       }
     }
 
     &__link {
       display: flex;
       align-items: baseline;
-      gap: clamp(1rem, 3vw, 3.4rem);
+      gap: clamp(1rem, 2vw, 3.4rem);
       position: relative;
 
       .copied {
@@ -72,7 +72,7 @@
 
         @media only screen and (min-width: $screen-medium) {
           padding: 0.6rem 0.8rem;
-          border-radius: 1.2rem;
+          border-radius: clamp(0.6rem, 0.7vw, 1.2rem);
         }
 
         @media (prefers-color-scheme: light) {
@@ -219,6 +219,10 @@
 
         > * {
           margin: 0 0 1rem;
+        }
+
+        a:hover {
+          text-decoration: underline;
         }
       }
     }

@@ -31,30 +31,16 @@
   &__right {
     display: flex;
     flex-direction: column;
-    font-size: clamp(1.6rem, 1.8vw, 1.6vw);
+    font-size: clamp(1.6rem, 1.8vw, 3.6rem);
     line-height: 80%;
     align-items: flex-end;
     justify-content: space-between;
-    height: clamp(4rem, 4.6vw, 4vw);
+    height: clamp(4rem, 4.6vw, 9rem);
 
     .nav__contact {
       display: flex;
       align-items: baseline;
       gap: clamp(1rem, 0.6vw, 0.8vw);
-
-      svg {
-        height: clamp(1rem, 1vw, 0.9vw);
-        width: clamp(1rem, 1vw, 0.9vw);
-
-        path {
-          @media (prefers-color-scheme: light) {
-            fill: palette(black);
-          }
-          @media (prefers-color-scheme: dark) {
-            fill: palette(beige);
-          }
-        }
-      }
     }
 
     .lang {
@@ -63,8 +49,8 @@
   }
 
   &__logo {
-    height: clamp(4rem, 4.6vw, 9rem);
-    width: clamp(4rem, 4.6vw, 9rem);
+    height: clamp(4rem, 4vw, 9rem);
+    width: clamp(4rem, 4vw, 9rem);
     transition: transform 0.2s ease-in-out;
 
     &:hover {
