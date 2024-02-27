@@ -43,6 +43,36 @@ const text = {
     hero_2_16: "thoughtful, ",
     hero_2_17: "exciting ",
     hero_2_18: "work",
+
+    seo: {
+      title: "Studio Brunch",
+      keywords: [
+        "Professional web design",
+        "Creative website development",
+        "Responsive web design services",
+        "Custom website design",
+        "User-friendly website design",
+        "SEO-friendly website design",
+        "Mobile-responsive web design",
+        "Affordable web design solutions",
+        "Innovative web development",
+        "E-commerce website design",
+        "WordPress website design",
+        "CMS website design",
+        "Graphic design services",
+        "UI/UX design expertise",
+        "Brand-focused website design",
+        "Website redesign services",
+        "Small business website design",
+        "Corporate website design",
+        "Landing page design",
+        "Website maintenance services",
+      ],
+      description: "",
+      twitter: {
+        handle: "",
+      },
+    },
   },
   fr: {
     logoAria: "Logo de studio Brunch",
@@ -85,6 +115,36 @@ const text = {
     hero_2_13: "réfléchis ",
     hero_2_14: "et ",
     hero_2_15: "stimulants",
+
+    seo: {
+      title: "Studio Brunch",
+      keywords: [
+        "Conception web professionnelle",
+        "Développement de sites web créatif",
+        "Conception web responsive",
+        "Conception de sites web sur mesure",
+        "Conception de sites web conviviaux",
+        "Conception de sites web optimisée pour le référencement (SEO)",
+        "Conception de sites web adaptés aux mobiles",
+        "Solutions de conception web abordables",
+        "Développement web innovant",
+        "Conception de sites web e-commerce",
+        "Conception de sites web WordPress",
+        "Conception de sites web avec système de gestion de contenu (CMS)",
+        "Services de design graphique",
+        "Expertise en conception UI/UX",
+        "Conception de sites web axée sur la marque",
+        "Services de refonte de sites web",
+        "Conception de sites web pour petites entreprises",
+        "Conception de sites web corporatifs",
+        "Conception de pages de destination (landing pages)",
+        "Services de maintenance de sites web"
+      ],
+      description: "",
+      twitter: {
+        handle: "",
+      },
+    },
   },
 };
 

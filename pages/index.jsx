@@ -2,6 +2,7 @@
 import { useRouter } from "next/router";
 import text from "../translations/text";
 
+import Seo from "../components/Seo";
 import Nav from "../components/Nav/Nav";
 import Footer from "../components/Footer/index";
 import AnimatedTextSlide from "../components/AnimatedTextSlide";
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <>
+      <Seo currentLanguage={currentLanguage.seo} />
       <Nav currentLanguage={currentLanguage} locale={locale} />
       <div className="home">
         <AnimatedTextSlide
