@@ -73,6 +73,23 @@ const text = {
         handle: "",
       },
     },
+
+    services: {
+      design: "Design",
+      operations: "Operations",
+      brandIdentity: "Brand Identity",
+      webDes: "Web Design & Development",
+      contStrat: "Content Strategy & Production",
+      opCons: "Operational Consulting",
+      recruitment: "Recruitment",
+      seeCap: "See our detailed capabilities",
+    },
+
+    footer: {
+      letsChat: "Let's Chat",
+      linkCopied: "Link copied to clipboard",
+      montreal: "Based in Montreal",
+    },
   },
   fr: {
     logoAria: "Logo de studio Brunch",
@@ -138,12 +155,29 @@ const text = {
         "Conception de sites web pour petites entreprises",
         "Conception de sites web corporatifs",
         "Conception de pages de destination (landing pages)",
-        "Services de maintenance de sites web"
+        "Services de maintenance de sites web",
       ],
       description: "",
       twitter: {
         handle: "",
       },
+    },
+
+    services: {
+      design: "Design",
+      operations: "Opérations",
+      brandIdentity: "Identité de Marque",
+      webDes: "Design et Développement Web",
+      contStrat: "Startégie et Production de Contenu",
+      opCons: "Consultation Opérationnelle",
+      recruitment: "Recrutement",
+      seeCap: "Voir toutes nos capabilités",
+    },
+
+    footer: {
+      letsChat: "",
+      linkCopied: "Lien copié",
+      montreal: "Situé à Montréal",
     },
   },
 };

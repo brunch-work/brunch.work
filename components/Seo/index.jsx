@@ -9,7 +9,10 @@ export default function Seo({currentLanguage}) {
     <>
       <Head>
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=2"
+        />
         <meta
           name="robots"
           content={
@@ -30,13 +33,14 @@ export default function Seo({currentLanguage}) {
           name="keywords"
           content={keywords && keywords.length ? keywords.join(",") : keywords}
         />
-        <meta name="author" content="Studio Freight" />
+        <meta name="author" content="Studio Brunch" />
         <meta name="referrer" content="no-referrer" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="geo.region" content="US" />
+        <meta name="geo.region" content="CA-QC" />
+        <meta name="geo.placename" content="Montreal" />
 
         {/* START FAVICON */}
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/images/png/favicon.png" sizes="32x32" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
