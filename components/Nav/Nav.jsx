@@ -1,7 +1,6 @@
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 function Nav({ currentLanguage, locale }) {
-
   return (
     <div className="nav main-grid">
       <div className="margin"></div>
@@ -53,10 +52,39 @@ function Nav({ currentLanguage, locale }) {
           <div className="nav__right">
             <a href="#contact">
               <div className="nav__contact">
-                {currentLanguage.contact}
+                <span>{currentLanguage.contact}</span>
+                <div className="inline-link__box">
+                  <svg
+                    className="arrow arrow--1"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="Vector"
+                      d="M17.9922 0.00978898L18 14.7501H15.5253L15.5214 4.36785L1.88732 18L0 16.1107L13.6341 2.48053L3.22449 2.50402L3.19709 0L17.9922 0.00978898Z"
+                      fill="#D7D2CB"
+                    />
+                  </svg>
+                  <svg
+                    className="arrow arrow--2"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="Vector"
+                      d="M17.9922 0.00978898L18 14.7501H15.5253L15.5214 4.36785L1.88732 18L0 16.1107L13.6341 2.48053L3.22449 2.50402L3.19709 0L17.9922 0.00978898Z"
+                      fill="#D7D2CB"
+                    />
+                  </svg>
+                </div>
               </div>
             </a>
-
 
             <LanguageSwitcher currentLanguage={currentLanguage} />
           </div>

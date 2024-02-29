@@ -46,6 +46,36 @@
     .lang {
       margin: 0;
     }
+
+    .arrow {
+      &--1 {
+        transition: transform 0.2s ease-in-out;
+      }
+
+      &--2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(-200%, 200%);
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+
+    a:hover {
+      text-decoration: underline;
+
+      .arrow {
+        &--1 {
+          transform: translate(200%, -200%);
+          transition: transform 0.2s ease-in-out;
+        }
+
+        &--2 {
+          transform: translate(0, -15%);
+          transition: transform 0.2s ease-in-out;
+        }
+      }
+    }
   }
 
   &__logo {

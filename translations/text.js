@@ -169,16 +169,16 @@ const text = {
     services: {
       design: "Design",
       operations: "Opérations",
-      brandIdentity: "Identité de Marque",
-      webDes: "Design et Développement Web",
-      contStrat: "Startégie et Production de Contenu",
-      opCons: "Consultation Opérationnelle",
+      brandIdentity: "Identité de marque",
+      webDes: "Design et développement web",
+      contStrat: "Stratégie et production de contenu",
+      opCons: "Consultation opérationnelle",
       recruitment: "Recrutement",
       seeCap: "Voir toutes nos compétences",
     },
 
     footer: {
-      letsChat: "",
+      letsChat: "Parlez-nous",
       email: "hi@brunch.work",
       linkCopied: "Lien copié",
       montreal: "Situé à Montréal",
