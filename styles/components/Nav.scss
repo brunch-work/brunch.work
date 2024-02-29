@@ -47,6 +47,17 @@
       margin: 0;
     }
 
+    svg {
+      path {
+        @media (prefers-color-scheme: light) {
+          fill: palette(black);
+        }
+        @media (prefers-color-scheme: dark) {
+          fill: palette(beige);
+        }
+      }
+    }
+
     .arrow {
       &--1 {
         transition: transform 0.2s ease-in-out;
