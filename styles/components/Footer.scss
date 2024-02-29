@@ -47,9 +47,16 @@
       position: relative;
 
       .copied {
-        border: 1px solid palette(beige);
         padding: 0.2rem 1rem;
         border-radius: 999px;
+
+        @media (prefers-color-scheme: light) {
+          border: 1px solid palette(black);
+        }
+
+        @media (prefers-color-scheme: dark) {
+          border: 1px solid palette(beige);
+        }
       }
 
       .email {
