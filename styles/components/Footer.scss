@@ -208,8 +208,23 @@
         .email {
           display: flex;
 
+          .copy {
+            display: flex;
+            cursor: pointer;
+
+            &:hover {
+              p {
+                text-decoration: underline;
+              }
+            }
+          }
+
           .clipboard {
             cursor: pointer;
+          }
+
+          > a:hover {
+            text-decoration: none;
           }
         }
 

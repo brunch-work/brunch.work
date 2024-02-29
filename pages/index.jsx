@@ -7,6 +7,7 @@ import Nav from "../components/Nav/Nav";
 import Footer from "../components/Footer/index";
 import AnimatedTextSlide from "../components/AnimatedTextSlide";
 import useTranslateSlide from "../hooks/useTranslateSlide";
+import Inline from "../components/ArrowButton/Inline";
 
 export default function Home() {
   const router = useRouter();
@@ -50,25 +51,25 @@ export default function Home() {
             <div className="main-body">
               <div className="block block--design">
                 <div className="column column--left">
-                  <p>Design</p>
+                  <p>{currentLanguage.services.design}</p>
                 </div>
                 <div className="column column--right">
                   <ul>
-                    <li>Brand Identity</li>
-                    <li>Web Design & Development</li>
-                    <li>Content Strategy & Production</li>
+                    <li>{currentLanguage.services.brandIdentity}</li>
+                    <li>{currentLanguage.services.webDes}</li>
+                    <li>{currentLanguage.services.contStrat}</li>
                   </ul>
                 </div>
               </div>
 
               <div className="block block--operations">
                 <div className="column column--left">
-                  <p>Operations</p>
+                  <p>{currentLanguage.services.operations}</p>
                 </div>
                 <div className="column column--right">
                   <ul>
-                    <li>Operational Consulting</li>
-                    <li>Recruitment</li>
+                    <li>{currentLanguage.services.opCons}</li>
+                    <li>{currentLanguage.services.recruitment}</li>
                   </ul>
                 </div>
               </div>
@@ -76,22 +77,11 @@ export default function Home() {
               <div className="block block--contact">
                 <div className="column column--left" />
                 <div className="column column--right">
-                  <a href="https://3l27bruyzob.typeform.com/to/NpR7mDJ8" target="_blank">
-                    See our detailed capabilities
-                  </a>
-                  <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      id="Vector"
-                      d="M17.9922 0.00978898L18 14.7501H15.5253L15.5214 4.36785L1.88732 18L0 16.1107L13.6341 2.48053L3.22449 2.50402L3.19709 0L17.9922 0.00978898Z"
-                      fill="#D7D2CB"
-                    />
-                  </svg>
+                  <Inline
+                    text={currentLanguage.services.seeCap}
+                    link="https://3l27bruyzob.typeform.com/to/NpR7mDJ8"
+                    isSmall={true}
+                  />
                 </div>
               </div>
             </div>
@@ -99,7 +89,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Footer />
+        <Footer currentLanguage={currentLanguage.footer} />
       </div>
     </>
   );

@@ -68,7 +68,8 @@ const text = {
         "Landing page design",
         "Website maintenance services",
       ],
-      description: "",
+      description:
+        "Brunch is a creative agency solidifying brands through user centric digital solutions,and operational excellence",
       twitter: {
         handle: "",
       },
@@ -87,6 +88,7 @@ const text = {
 
     footer: {
       letsChat: "Let's Chat",
+      email: "hi@brunch.work",
       linkCopied: "Link copied to clipboard",
       montreal: "Based in Montreal",
     },
@@ -157,7 +159,8 @@ const text = {
         "Conception de pages de destination (landing pages)",
         "Services de maintenance de sites web",
       ],
-      description: "",
+      description:
+        "Brunch est une agence créative qui renforce les marques grâce à des solutions numériques et opérationnelles",
       twitter: {
         handle: "",
       },
@@ -171,11 +174,12 @@ const text = {
       contStrat: "Startégie et Production de Contenu",
       opCons: "Consultation Opérationnelle",
       recruitment: "Recrutement",
-      seeCap: "Voir toutes nos capabilités",
+      seeCap: "Voir toutes nos compétences",
     },
 
     footer: {
       letsChat: "",
+      email: "hi@brunch.work",
       linkCopied: "Lien copié",
       montreal: "Situé à Montréal",
     },

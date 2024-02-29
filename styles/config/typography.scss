@@ -26,6 +26,10 @@ p {
   @media (prefers-color-scheme: dark) {
     color: palette(beige);
   }
+
+  &.small {
+    font-size: clamp(1.4rem, 1.2vw, 1vw);
+  }
 }
 
 a {

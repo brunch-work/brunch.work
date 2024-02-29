@@ -33,35 +33,6 @@
         width: 50%;
       }
     }
-
-    &--contact {
-      margin: 0;
-
-      .column--right {
-        flex-direction: row;
-        align-items: baseline;
-        gap: clamp(0.8rem, 0.5vw, 0.8vw);
-        font-size: clamp(1.4rem, 1.2vw, 1vw);
-
-        a:hover {
-          text-decoration: underline;
-        }
-
-        svg {
-          height: clamp(0.8rem, 0.9vw, 0.5vw);
-          width: clamp(0.8rem, 0.9vw, 0.5vw);
-
-          path {
-            @media (prefers-color-scheme: light) {
-              fill: palette(black);
-            }
-            @media (prefers-color-scheme: dark) {
-              fill: palette(beige);
-            }
-          }
-        }
-      }
-    }
   }
 
   ul {

@@ -41,9 +41,7 @@ export default function Seo({currentLanguage}) {
 
         {/* START FAVICON */}
         <link rel="icon" href="/images/png/favicon.png" sizes="32x32" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="icon" href="/images/svg/icon.svg" type="image/svg+xml" />
         {/* END FAVICON */}
 
         <title>{title}</title>
