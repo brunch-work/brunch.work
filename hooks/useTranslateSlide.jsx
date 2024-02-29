@@ -73,11 +73,10 @@ const useTranslateSlide = (currentLanguage, locale) => {
         { class: "font--main", word: currentLanguage.hero_2_8 },
         { class: "font--main", word: currentLanguage.hero_2_9 },
         { class: "font--main", word: currentLanguage.hero_2_10 },
-        { class: "font--main", word: currentLanguage.hero_2_11 },
+        { class: "font--alt", word: currentLanguage.hero_2_11 },
         { class: "font--alt", word: currentLanguage.hero_2_12 },
         { class: "font--alt", word: currentLanguage.hero_2_13 },
         { class: "font--alt", word: currentLanguage.hero_2_14 },
-        { class: "font--alt", word: currentLanguage.hero_2_15 },
       ];
     }
 
