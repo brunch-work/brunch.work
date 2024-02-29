@@ -2,7 +2,6 @@ import { useState } from "react";
 import { emojisplosion } from "emojisplosion";
 
 import Big from "../ArrowButton/Big";
-import Inline from "../ArrowButton/Inline";
 
 export default function Footer({ currentLanguage }) {
   const [linkClicked, setLinkClicked] = useState(false);
@@ -48,16 +47,16 @@ export default function Footer({ currentLanguage }) {
               <div className="col-3">
                 <div className="column">
                   <div className="socials">
-                    <Inline
-                      text="Instagram"
-                      link="https://www.instagram.com/brunch.work/"
-                      isSmall={false}
-                    />
-                    <Inline
-                      text="LinkedIn"
-                      link=""
-                      isSmall={false}
-                    />
+                    <a
+                      href="https://www.instagram.com/brunch.work/"
+                      target="_blank"
+                    >
+                      Instagram
+                    </a>
+                    {/* TODO: Linkedin link */}
+                    <a href="" target="_blank">
+                      LinkedIn
+                    </a>
                   </div>
                 </div>
                 <div className="column montreal">
@@ -99,9 +98,7 @@ export default function Footer({ currentLanguage }) {
                     </div>
                     <a href="mailto:hi@brunch.work">&nbsp; ✉️</a>
                   </div>
-                  {footerLinkClicked && (
-                    <p className="small">Link copied to clipboard</p>
-                  )}
+                  {footerLinkClicked && <p className="small">Link copied to clipboard</p>}
                 </div>
               </div>
             </div>
