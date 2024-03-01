@@ -84,6 +84,7 @@ const text = {
       opCons: "Operational Consulting",
       recruitment: "Recruitment",
       seeCap: "See our detailed capabilities",
+      typeform: "https://3l27bruyzob.typeform.com/to/NpR7mDJ8",
     },
 
     footer: {
@@ -175,6 +176,7 @@ const text = {
       opCons: "Consultation opérationnelle",
       recruitment: "Recrutement",
       seeCap: "Voir toutes nos compétences",
+      typeform: "https://3l27bruyzob.typeform.com/to/hFWGMAz9",
     },
 
     footer: {

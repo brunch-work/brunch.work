@@ -79,7 +79,7 @@ export default function Home() {
                 <div className="column column--right">
                   <Inline
                     text={currentLanguage.services.seeCap}
-                    link="https://3l27bruyzob.typeform.com/to/NpR7mDJ8"
+                    link={currentLanguage.services.typeform}
                     isSmall={true}
                   />
                 </div>
