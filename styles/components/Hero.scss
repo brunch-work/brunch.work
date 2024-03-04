@@ -12,7 +12,7 @@
   &__wrapper {
     text-align: left;
 
-    @media only screen and (min-width: $screen-medium) {
+    @media only screen and (min-width: $screen-large) {
       max-width: 80%;
       padding-top: 8vh;
     }
