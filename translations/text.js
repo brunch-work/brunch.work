@@ -88,7 +88,7 @@ const text = {
     },
 
     footer: {
-      letsChat: "Let's Chat",
+      letsChat: "Let's chat",
       email: "hi@brunch.work",
       linkCopied: "Link copied to clipboard",
       montreal: "Based in Montreal",
