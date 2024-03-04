@@ -36,7 +36,7 @@ export default function Footer({ currentLanguage }) {
                 </span>
                 <Big link={"mailto:hi@brunch.work"} />
                 {linkClicked && (
-                  <p className="copied">Link copied to clipboard</p>
+                  <p className="copied">{currentLanguage.linkCopied}</p>
                 )}
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function Footer({ currentLanguage }) {
                     </div>
                     <a href="mailto:hi@brunch.work">&nbsp; ✉️</a>
                   </div>
-                  {footerLinkClicked && <p className="small">Link copied to clipboard</p>}
+                  {footerLinkClicked && <p className="small">{currentLanguage.linkCopied}</p>}
                 </div>
               </div>
             </div>

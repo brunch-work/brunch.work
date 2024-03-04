@@ -184,6 +184,7 @@
       .column {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
 
         .socials {
           display: flex;
@@ -232,6 +233,20 @@
 
           > a:hover {
             text-decoration: none;
+          }
+        }
+
+        .small {
+          padding: 0.2rem 1rem;
+          border-radius: 999px;
+          display: inline-block;
+
+          @media (prefers-color-scheme: light) {
+            border: 1px solid palette(black);
+          }
+
+          @media (prefers-color-scheme: dark) {
+            border: 1px solid palette(beige);
           }
         }
 
