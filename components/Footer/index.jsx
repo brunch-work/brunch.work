@@ -53,8 +53,10 @@ export default function Footer({ currentLanguage }) {
                     >
                       Instagram
                     </a>
-                    {/* TODO: Linkedin link */}
-                    <a href="" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/company/studiobrunch"
+                      target="_blank"
+                    >
                       LinkedIn
                     </a>
                   </div>
@@ -98,7 +100,9 @@ export default function Footer({ currentLanguage }) {
                     </div>
                     <a href="mailto:hi@brunch.work">&nbsp; ✉️</a>
                   </div>
-                  {footerLinkClicked && <p className="small">{currentLanguage.linkCopied}</p>}
+                  {footerLinkClicked && (
+                    <p className="small">{currentLanguage.linkCopied}</p>
+                  )}
                 </div>
               </div>
             </div>

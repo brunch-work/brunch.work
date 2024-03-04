@@ -1,6 +1,6 @@
 const text = {
   en: {
-    logoAria: "Studio brunch logo",
+    logoAria: "Brunch logo",
     href: "/fr",
     locale: "fr",
     localeAria: "Site en français",
@@ -45,7 +45,7 @@ const text = {
     hero_2_18: "work",
 
     seo: {
-      title: "Studio Brunch",
+      title: "Brunch",
       keywords: [
         "Professional web design",
         "Creative website development",
@@ -137,7 +137,7 @@ const text = {
     hero_2_14: "stimulants",
 
     seo: {
-      title: "Studio Brunch",
+      title: "Brunch",
       keywords: [
         "Conception web professionnelle",
         "Développement de sites web créatif",

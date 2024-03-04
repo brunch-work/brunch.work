@@ -33,7 +33,7 @@ export default function Seo({currentLanguage}) {
           name="keywords"
           content={keywords && keywords.length ? keywords.join(",") : keywords}
         />
-        <meta name="author" content="Studio Brunch" />
+        <meta name="author" content="Brunch" />
         <meta name="referrer" content="no-referrer" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="geo.region" content="CA-QC" />
