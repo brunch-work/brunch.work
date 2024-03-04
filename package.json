@@ -10,6 +10,7 @@
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.19.2",
     "@vercel/analytics": "^1.0.2",
+    "@vercel/speed-insights": "^1.0.10",
     "emojisplosion": "^2.6.1",
     "framer-motion": "^10.16.5",
     "gsap": "^3.12.5",

@@ -1,5 +1,6 @@
 import "../styles/main.scss";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App({ Component, pageProps }) {
 
@@ -7,6 +8,7 @@ function App({ Component, pageProps }) {
     <div className="app">
       <Component {...pageProps} />
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
