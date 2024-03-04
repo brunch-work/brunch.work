@@ -149,7 +149,7 @@
     &--top {
       display: none;
 
-      @media only screen and (min-width: $screen-medium) {
+      @media only screen and (min-width: $screen-large) {
         display: block;
       }
     }
@@ -161,7 +161,7 @@
       .copyright {
         width: 50%;
 
-        @media only screen and (min-width: $screen-medium) {
+        @media only screen and (min-width: $screen-large) {
           width: 25%;
         }
       }
@@ -171,7 +171,7 @@
         display: flex;
         flex-direction: column;
 
-        @media only screen and (min-width: $screen-medium) {
+        @media only screen and (min-width: $screen-large) {
           width: 75%;
           flex-direction: row;
 
