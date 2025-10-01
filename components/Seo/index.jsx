@@ -66,8 +66,9 @@ export default function Seo({ currentLanguage }) {
 
         <title>{title}</title>
         <script
-          async
-          src="https://api.redcar.io/tags/ea259823-2438-47c6-9e2a-9a9e125debfc/tags.js"
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="6f0f8ebd-86c1-4744-be76-bc9708a9de61"
         ></script>
       </Head>
       <NextSeo
