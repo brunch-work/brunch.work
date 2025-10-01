@@ -1,0 +1,193 @@
+// DAVINCI REG
+@font-face {
+    font-family: 'Da Vinci';
+    src: local('TRJNDaVinci-Display');
+    src: url('../../public/fonts/TRJNDaVinci-Display.otf') format('opentype'),
+        url('../../public/fonts/TRJNDaVinci-Display.woff') format('woff');
+    font-style: normal;
+}
+
+// DAVINCI ITALIC
+@font-face {
+    font-family: 'Da Vinci';
+    src: local('TRJN DaVinci Italic-Display');
+    src: url('../../public/fonts/TRJN DaVinci Italic-Display.otf') format('opentype'),
+        url('../../public/fonts/TRJNDaVinciItalic-Display.woff') format('woff');
+    font-style: italic;
+}
+
+// MONUMENT THIN
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-Thin');
+    src: url('../../public/fonts/ABCMonumentGrotesk-Thin.otf') format('opentype'),
+        url('../../public/fonts/ABCMonumentGrotesk-Thin.woff') format('woff'),
+        url('../../public/fonts/ABCMonumentGrotesk-Thin.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 100;
+}
+
+// MONUMENT THIN ITALIC
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-ThinItalic');
+    src: url('../../public/fonts/ABCMonumentGrotesk-ThinItalic.otf') format('opentype'),
+        url('../../public/fonts/ABCMonumentGrotesk-ThinItalic.woff') format('woff'),
+        url('../../public/fonts/ABCMonumentGrotesk-ThinItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 100;
+}
+
+// MONUMENT LIGHT
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-Light');
+    src: url('../../public/fonts/ABCMonumentGrotesk-Light.otf') format('opentype'),
+        url('../../public/fonts/ABCMonumentGrotesk-Light.woff') format('woff'),
+        url('../../public/fonts/ABCMonumentGrotesk-Light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 200;
+}
+
+// MONUMENT LIGHT ITALIC
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-LightItalic');
+    src: url('../../public/fonts/ABCMonumentGrotesk-LightItalic.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-LightItalic.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-LightItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 200;
+}
+
+// MONUMENT REG
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-Regular');
+    src: url('../../public/fonts/ABCMonumentGrotesk-Regular.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-Regular.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+// MONUMENT REG ITALIC
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-RegularItalic');
+    src: url('../../public/fonts/ABCMonumentGrotesk-RegularItalic.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-RegularItalic.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-RegularItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 300;
+}
+
+// MONUMENT MEDIUM
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-Medium');
+    src: url('../../public/fonts/ABCMonumentGrotesk-Medium.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-Medium.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+// MONUMENT MEDIUM ITALIC
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-MediumItalic');
+    src: url('../../public/fonts/ABCMonumentGrotesk-MediumItalic.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-MediumItalic.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-MediumItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 400;
+}
+
+// MONUMENT BOLD
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-Bold');
+    src: url('../../public/fonts/ABCMonumentGrotesk-Bold.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-Bold.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+// MONUMENT BOLD ITALIC
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-BoldItalic');
+    src: url('../../public/fonts/ABCMonumentGrotesk-BoldItalic.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-BoldItalic.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-BoldItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 500;
+}
+
+// MONUMENT HEAVY
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-Heavy');
+    src: url('../../public/fonts/ABCMonumentGrotesk-Heavy.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-Heavy.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-Heavy.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+// MONUMENT HEAVY ITALIC
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-HeavyItalic');
+    src: url('../../public/fonts/ABCMonumentGrotesk-HeavyItalic.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-HeavyItalic.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-HeavyItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 600;
+}
+
+// MONUMENT BLACK
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-Black');
+    src: url('../../public/fonts/ABCMonumentGrotesk-Black.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-Black.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-Black.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+// MONUMENT BLACK ITALIC
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-BlackItalic');
+    src: url('../../public/fonts/ABCMonumentGrotesk-BlackItalic.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-BlackItalic.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-BlackItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 700;
+}
+
+// MONUMENT ULTRA
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-Ultra');
+    src: url('../../public/fonts/ABCMonumentGrotesk-Ultra.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-Ultra.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-Ultra.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 800;
+}
+
+// MONUMENT ULTRA ITALIC
+@font-face {
+    font-family: "Monument Grotesk";
+    src: local('ABCMonmuentGrotesk-UltraItalic');
+    src: url('../../public/fonts/ABCMonumentGrotesk-UltraItalic.otf') format('opentype'),
+    url('../../public/fonts/ABCMonumentGrotesk-UltraItalic.woff') format('woff'),
+    url('../../public/fonts/ABCMonumentGrotesk-UltraItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 800;
+}

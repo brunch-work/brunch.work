@@ -1,0 +1,16 @@
+.home__wrapper {
+  @media (prefers-color-scheme: light) {
+    color: palette(black);
+    background-color: palette(beige);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: palette(beige);
+    background-color: palette(black);
+  }
+}
+
+.email-signature {
+  padding: 20rem 0;
+  background-color: white;
+}

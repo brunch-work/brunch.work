@@ -1,0 +1,43 @@
+/**
+ * Colour Variables and Palettes => Sass Map
+ *
+ */
+
+// Base colours
+$color-black: #1c1f2a;
+$color-beige: #d7d2cb;
+$color-yellow: #d9fc00;
+$color-orange: #ef411b;
+$color-blue: #4845d2;
+$color-blue-alt: #302dd7;
+$color-green: #0c6029;
+$color-green-light: #009639;
+
+$palettes: (
+  black: (
+    base: $color-black,
+  ),
+  beige: (
+    base: $color-beige,
+  ),
+  orange: (
+    base: $color-orange,
+  ),
+  yellow: (
+    base: $color-yellow,
+  ),
+  green: (
+    base: $color-green,
+    light: $color-green-light,
+  ),
+  blue: (
+    base: $color-blue,
+    alt: $color-blue-alt,
+  ),
+);
+
+/* stylelint-disable */
+// Generate Palettes
+@function palette($palette, $tone: "base") {
+  @return map-get(map-get($palettes, $palette), $tone);
+}

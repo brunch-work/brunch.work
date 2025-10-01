@@ -1,0 +1,65 @@
+@mixin selection {
+  @media (prefers-color-scheme: dark) {
+    color: palette(green, light);
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: palette(blue, alt);
+  }
+}
+
+// ::selection {
+//   @include selection;
+// }
+
+// ::-moz-selection {
+//   @include selection;
+// }
+
+p {
+  font-weight: 300;
+
+  @media (prefers-color-scheme: light) {
+    color: palette(black);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: palette(beige);
+  }
+
+  &.small {
+    font-size: clamp(1.4rem, 1.2vw, 1.8rem);
+  }
+}
+
+a,
+.link {
+  text-decoration: none;
+  font-weight: 300;
+
+  @media (prefers-color-scheme: light) {
+    color: palette(black);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: palette(beige);
+  }
+
+  &:hover {
+    @media (prefers-color-scheme: light) {
+      color: palette(blue);
+
+      * {
+        color: palette(blue);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      color: palette(green, light);
+
+      * {
+        color: palette(green, light);
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.services {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.8rem, 1.8vw, 1.6vw);
+  line-height: 1.3;
+  font-weight: 300;
+  width: 100%;
+  height: 100vh;
+
+  .block {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 7.5rem;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media only screen and (min-width: $screen-medium) {
+      flex-direction: row;
+      gap: 0;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      p {
+        margin: 0;
+      }
+
+      @media only screen and (min-width: $screen-medium) {
+        width: 50%;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
