@@ -64,11 +64,10 @@ export default function Seo({ currentLanguage }) {
           content="#1C1F2A"
         />
         <script
-          async
           defer
           data-domain="brunch.work"
-          src="https://plausible.io/js/plausible.js"
-        />
+          src="https://plausible.brunch.work/js/script.js"
+        ></script>
         <title>{title}</title>
       </Head>
       <NextSeo
