@@ -63,7 +63,12 @@ export default function Seo({ currentLanguage }) {
           media="(prefers-color-scheme: dark)"
           content="#1C1F2A"
         />
-
+        <script
+          async
+          defer
+          data-domain="brunch.work"
+          src="https://plausible.io/js/plausible.js"
+        />
         <title>{title}</title>
       </Head>
       <NextSeo
