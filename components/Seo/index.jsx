@@ -70,6 +70,9 @@ export default function Seo({ currentLanguage }) {
           src="https://cloud.umami.is/script.js"
           data-website-id="6f0f8ebd-86c1-4744-be76-bc9708a9de61"
         ></script>
+        <script defer data-domain="brunch.work" src="https://plausible.brunch.work/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+        <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
       </Head>
       <NextSeo
         title={title}
