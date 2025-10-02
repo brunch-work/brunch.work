@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { emojisplosion } from "emojisplosion";
 import Link from "next/link";
+import { usePlausible } from "next-plausible";
 
 import Big from "../ArrowButton/Big";
 
@@ -9,11 +10,13 @@ export default function Footer({ currentLanguage, router }) {
   const [linkClicked, setLinkClicked] = useState(false);
   const [footerLinkClicked, setFooterLinkClicked] = useState(false);
 
+  const plausible = usePlausible();
   const is404 = router.route === "/404" ? true : false;
   const language = is404 === false ? {...currentLanguage.footer} : {...currentLanguage.page404};
 
   const handleLinkClick = (setLink) => {
 
+    plausible("Footer link");
     emojisplosion();
     navigator.clipboard.writeText("hi@brunch.work");
     setLink(true);

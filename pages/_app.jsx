@@ -1,6 +1,7 @@
 import "../styles/main.scss";
 import { useRouter } from "next/router";
 import text from "../translations/text";
+import PlausibleProvider from "next-plausible";
 
 import Seo from "../components/Seo";
 
@@ -12,15 +13,17 @@ function App({ Component, pageProps }) {
 
 
   return (
-    <div className="app">
-      <Seo currentLanguage={currentLanguage.seo} />
-      <Component
-        {...pageProps}
-        currentLanguage={currentLanguage}
-        locale={locale}
-        router={router}
-      />
-    </div>
+    <PlausibleProvider domain="brunch.work" trackOutboundLinks>
+      <div className="app">
+        <Seo currentLanguage={currentLanguage.seo} />
+        <Component
+          {...pageProps}
+          currentLanguage={currentLanguage}
+          locale={locale}
+          router={router}
+        />
+      </div>
+    </PlausibleProvider>
   );
 }
 
